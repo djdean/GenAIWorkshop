@@ -18,7 +18,7 @@ def main():
     document_intelligence_endpoint = "<Document Intelligence Endpoint>"
     
     st.set_page_config(layout="wide")
-    init_sidebar(model,openai_api_version,endpoint,openai_key)
+    init_sidebar(model,openai_api_version,endpoint,openai_key,document_intelligence_endpoint,document_intelligence_key)
     uploaded_file = st.file_uploader("Choose a file")
     if uploaded_file is not None:
         with st.spinner("Thinking..."):
